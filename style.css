@@ -1,0 +1,155 @@
+/*
+    style.css - this stylesheet is linked from index.html to apply styles to the products home page.
+    Add all of your custom styles here.
+*/
+
+body {
+    margin: 0px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #4D1A45;
+}
+
+header>img {
+    padding: 10px;
+    width: 20em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+#home {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0.5;
+}
+
+#cart {
+    display: flex;
+    flex-grow: 0.4;
+    justify-content: left;
+}
+
+#message {
+    display: flex;
+    flex-grow: 0.8;
+    justify-content: center;
+}
+
+#logout {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+#products-search {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #F17EB8;
+}
+
+#products-h2 {
+    display: flex;
+    flex-grow: 4;
+    justify-content: flex-start;
+    margin: 5px;
+    color: #4D1A45;
+}
+
+#search-tb {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+#search-button {
+    color: #4D1A45;
+}
+
+#products-p {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    color: #4D1A45;
+}
+
+main {
+    max-height: 35em;
+    overflow: auto;
+    background-color: #FFC2CF;
+}
+
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 35em;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border-style: solid;
+    border-color: #4D1A45;
+    background-color: #FFEBEF;
+    color: #4D1A45;
+}
+
+.sku {
+    display: grid;
+    grid-column: 1 / 1;
+    margin: 10px;
+}
+
+.price {
+    display: grid;
+    grid-column: 2 / 2;
+    justify-items: end;
+    margin: 10px;
+}
+
+.product-name-action {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin: 10px;
+}
+
+.product-image {
+    display: grid;
+    grid-column: 1 / span 2;
+    border-style: none;
+    border-radius: 25px;
+    margin: 10 px;
+}
+
+.product-image>img {
+    width: 15em;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.cart {
+    display: grid;
+    grid-column: 1 / span 2;
+    justify-items: end;
+}
+
+footer {
+    display: flex;
+    background-color: #4D1A45;
+    color: white;
+}

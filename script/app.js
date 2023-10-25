@@ -1,7 +1,3 @@
-/*
-    app.js
-*/
-
 let products = [];
 
 function generateCard(card) {
